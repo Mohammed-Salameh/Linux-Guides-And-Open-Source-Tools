@@ -1,0 +1,24 @@
+Before you start make sure to do the following on the Windows DC
+
+C:\> dnscmd 127.0.0.1 /ZoneAdd ipa_domain /Forwarder ipa_ip_address
+
+after that move to linux machine and apply the following
+
+set hostname
+
+disable IPv6 : net.ipv6.conf.<interface0>.disable_ipv6 = 1
+
+to activate the repo for FREEIPA apply the following command
+
+dnf module -y install idm:DL1/dns --skip-broken
+
+after it is done apply the following command
+
+yum update -y
+yum install -y "*ipa-server" "*ipa-server-trust-ad" bind bind-dyndb-ldap
+
+if you face this error "ipa-server-install: error: option setup-dns: Integrated DNS requires 'ipa-server-dns' package"
+
+just do "dnf install ipa-server-dns
+
+ipa-server-install -a mypassword1 -p mypassword2 --domain=ipa_domain --realm=IPA_DOMAIN --setup-dns --no-forwarders -U
