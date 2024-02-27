@@ -18,9 +18,9 @@ Replace `ipa_domain` with your IPA domain and `ipa_ip_address` with the IP addre
 - **Set Hostname**: Configure the hostname as required.
 
 - **Disable IPv6**: To disable IPv6, modify the following system setting:
-
+```bash
 net.ipv6.conf.<interface0>.disable_ipv6 = 1
-
+```
 
 Replace `<interface0>` with your network interface name.
 
