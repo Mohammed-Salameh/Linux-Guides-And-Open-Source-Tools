@@ -46,9 +46,9 @@ yum install -y "*ipa-server" "*ipa-server-trust-ad" bind bind-dyndb-ldap
 <h6> Troubleshooting Installation </h6>
 
 If you encounter the error:
-
+```bash
 ipa-server-install: error: option setup-dns: Integrated DNS requires 'ipa-server-dns' package
-
+```
 
 Resolve it by running:
 
