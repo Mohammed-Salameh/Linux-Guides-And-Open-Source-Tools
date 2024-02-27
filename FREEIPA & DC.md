@@ -58,8 +58,8 @@ dnf install ipa-server-dns
 <h6> Install FreeIPA Server </h6>
 
 To install and configure the FreeIPA server, use:
-
+```bash
 ipa-server-install -a mypassword1 -p mypassword2 --domain=ipa_domain --realm=IPA_DOMAIN --setup-dns --no-forwarders -U
-
+```
 
 Replace `mypassword1` and `mypassword2` with your chosen passwords, and adjust `ipa_domain` and `IPA_DOMAIN` accordingly.
