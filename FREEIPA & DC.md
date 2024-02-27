@@ -23,7 +23,7 @@ net.ipv6.conf.<interface0>.disable_ipv6 = 1
 
 Replace `<interface0>` with your network interface name.
 
-<h4> Installing FreeIPA </h4>
+<h3> Installing FreeIPA </h3>
 
 <h6> Enable FreeIPA Repository </h6>
 
