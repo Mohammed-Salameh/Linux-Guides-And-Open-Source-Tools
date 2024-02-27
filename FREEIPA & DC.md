@@ -1,4 +1,4 @@
-<h4> Configure DNS Forwarding </h4>
+<h3> Configure DNS Forwarding </h3>
 
 1. On your Windows Domain Controller (DC), open the Command Prompt.
 2. Execute the following command to add a DNS forwarder:
