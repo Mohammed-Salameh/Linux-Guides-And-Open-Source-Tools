@@ -49,9 +49,9 @@ ipa-server-install: error: option setup-dns: Integrated DNS requires 'ipa-server
 ```
 
 Resolve it by running:
-
+```bash
 dnf install ipa-server-dns
-
+```
 
 <h5> Install FreeIPA Server </h5>
 
