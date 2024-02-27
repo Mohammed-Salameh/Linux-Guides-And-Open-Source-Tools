@@ -1,4 +1,4 @@
-# Windows DC Preparation Steps
+<h2> Windows DC Preparation Steps </h2>
 
 ## Configure DNS Forwarding
 
