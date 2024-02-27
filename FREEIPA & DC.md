@@ -26,14 +26,14 @@ Replace `<interface0>` with your network interface name.
 
 <h3> Installing FreeIPA </h3>
 
-<h6> Enable FreeIPA Repository </h6>
+<h5> Enable FreeIPA Repository </h5>
 
 Run the following command to activate the repo for FreeIPA:
 ```bash
 dnf module -y install idm:DL1/dns --skip-broken
 ```
 
-<h6> Update System and Install Packages </h6>
+<h5> Update System and Install Packages </h5>
 
 Execute these commands to update your system and install necessary packages:
 ```bash
@@ -41,7 +41,7 @@ yum update -y
 yum install -y "*ipa-server" "*ipa-server-trust-ad" bind bind-dyndb-ldap
 ```
 
-<h6> Troubleshooting Installation </h6>
+<h5> Troubleshooting Installation </h5>
 
 If you encounter the error:
 ```bash
@@ -53,7 +53,7 @@ Resolve it by running:
 dnf install ipa-server-dns
 
 
-<h6> Install FreeIPA Server </h6>
+<h5> Install FreeIPA Server </h5>
 
 To install and configure the FreeIPA server, use:
 ```bash
