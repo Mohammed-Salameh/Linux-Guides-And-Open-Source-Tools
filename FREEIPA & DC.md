@@ -15,9 +15,9 @@ Replace `ipa_domain` with your IPA domain and `ipa_ip_address` with the IP addre
 
 <h6> Initial Setup </h6>
 
-1. **Set Hostname**: Configure the hostname as required.
+- **Set Hostname**: Configure the hostname as required.
 
-2. **Disable IPv6**: To disable IPv6, modify the following system setting:
+- **Disable IPv6**: To disable IPv6, modify the following system setting:
 
 net.ipv6.conf.<interface0>.disable_ipv6 = 1
 
@@ -38,10 +38,10 @@ dnf module -y install idm:DL1/dns --skip-broken
 <h6> Update System and Install Packages </h6>
 
 Execute these commands to update your system and install necessary packages:
-
+```bash
 yum update -y
 yum install -y "*ipa-server" "*ipa-server-trust-ad" bind bind-dyndb-ldap
-
+```
 
 <h6> Troubleshooting Installation </h6>
 
