@@ -31,9 +31,9 @@ Replace `<interface0>` with your network interface name.
 <h6> Enable FreeIPA Repository </h6>
 
 Run the following command to activate the repo for FreeIPA:
-
+```bash
 dnf module -y install idm:DL1/dns --skip-broken
-
+```
 
 <h6> Update System and Install Packages </h6>
 
