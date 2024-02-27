@@ -4,9 +4,9 @@
 
 1. On your Windows Domain Controller (DC), open the Command Prompt.
 2. Execute the following command to add a DNS forwarder:
-
+```bash
 C:> dnscmd 127.0.0.1 /ZoneAdd ipa_domain /Forwarder ipa_ip_address
-
+```
 Replace `ipa_domain` with your IPA domain and `ipa_ip_address` with the IP address of your IPA server.
 
 #
