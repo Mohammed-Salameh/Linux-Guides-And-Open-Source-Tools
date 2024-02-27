@@ -1,5 +1,3 @@
-<h3> Windows DC Preparation Steps </h3>
-
 <h4> Configure DNS Forwarding </h4>
 
 1. On your Windows Domain Controller (DC), open the Command Prompt.
