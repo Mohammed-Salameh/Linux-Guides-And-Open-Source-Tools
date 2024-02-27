@@ -7,8 +7,9 @@
 
 C:> dnscmd 127.0.0.1 /ZoneAdd ipa_domain /Forwarder ipa_ip_address
 
-
 Replace `ipa_domain` with your IPA domain and `ipa_ip_address` with the IP address of your IPA server.
+
+#
 
 <h3> Linux Machine Configuration </h3>
 
@@ -22,6 +23,8 @@ net.ipv6.conf.<interface0>.disable_ipv6 = 1
 
 
 Replace `<interface0>` with your network interface name.
+
+#
 
 <h3> Installing FreeIPA </h3>
 
