@@ -1,6 +1,6 @@
-<h2> Windows DC Preparation Steps </h2>
+<h3> Windows DC Preparation Steps </h3>
 
-<h4> Configure DNS Forwarding </h5>
+<h4> Configure DNS Forwarding </h4>
 
 1. On your Windows Domain Controller (DC), open the Command Prompt.
 2. Execute the following command to add a DNS forwarder:
@@ -10,9 +10,9 @@ C:> dnscmd 127.0.0.1 /ZoneAdd ipa_domain /Forwarder ipa_ip_address
 
 Replace `ipa_domain` with your IPA domain and `ipa_ip_address` with the IP address of your IPA server.
 
-# Linux Machine Configuration
+<h4> Linux Machine Configuration </h4>
 
-## Initial Setup
+<h6> Initial Setup </h6>
 
 1. **Set Hostname**: Configure the hostname as required.
 
@@ -25,14 +25,14 @@ Replace `<interface0>` with your network interface name.
 
 ## Installing FreeIPA
 
-1. **Enable FreeIPA Repository**:
+<h6> Enable FreeIPA Repository </h6>
 
 Run the following command to activate the repo for FreeIPA:
 
 dnf module -y install idm:DL1/dns --skip-broken
 
 
-2. **Update System and Install Packages**:
+<h6> Update System and Install Packages </h6>
 
 Execute these commands to update your system and install necessary packages:
 
@@ -40,7 +40,7 @@ yum update -y
 yum install -y "*ipa-server" "*ipa-server-trust-ad" bind bind-dyndb-ldap
 
 
-3. **Troubleshooting Installation**:
+<h6> Troubleshooting Installation </h6>
 
 If you encounter the error:
 
@@ -52,7 +52,7 @@ Resolve it by running:
 dnf install ipa-server-dns
 
 
-4. **Install FreeIPA Server**:
+<h6> Install FreeIPA Server </h6>
 
 To install and configure the FreeIPA server, use:
 
