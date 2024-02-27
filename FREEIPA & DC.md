@@ -10,7 +10,7 @@ C:> dnscmd 127.0.0.1 /ZoneAdd ipa_domain /Forwarder ipa_ip_address
 
 Replace `ipa_domain` with your IPA domain and `ipa_ip_address` with the IP address of your IPA server.
 
-<h4> Linux Machine Configuration </h4>
+<h3> Linux Machine Configuration </h3>
 
 <h6> Initial Setup </h6>
 
