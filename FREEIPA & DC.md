@@ -11,7 +11,7 @@ Replace `ipa_domain` with your IPA domain and `ipa_ip_address` with the IP addre
 
 <h3> Linux Machine Configuration </h3>
 
-<h6> Initial Setup </h6>
+<h6> > Initial Setup </h6>
 
 - **Set Hostname**: Configure the hostname as required.
 
